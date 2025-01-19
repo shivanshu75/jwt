@@ -6,4 +6,9 @@ const router=express.Router()
 router.post('/',userController)
 .get('/login',loginController)
 
+router.get('/',(req,res)=>{
+  console.log("Test")
+}
+  )
+
 module.exports=router;
