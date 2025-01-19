@@ -46,7 +46,7 @@ const loginController = async (req, res) => {
 
         // Validate request body
         if (!email || !password) {
-            return res.status(400).json({ msg: 'Email and password are required' });
+            return res.status(400).json({ msg: 'Email are required' });
         }
 
         // Check if user exists
